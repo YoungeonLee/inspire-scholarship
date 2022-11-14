@@ -1,0 +1,57 @@
+:root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  min-height: 100vh;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+}
+
+.cell {
+  border: 1px solid black;
+  flex: 1;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.rotate {
+  animation: rotation 100ms infinite alternate;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(-30deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+.zoom {
+  animation: scale 500ms infinite alternate;
+}
+
+@keyframes scale {
+  from {
+    transform: scale(0.8);
+  }
+  to {
+    transform: scale(1);
+  }
+}
